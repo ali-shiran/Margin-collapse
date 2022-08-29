@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Margin collapse</title>
+    <link rel="stylesheet" href="mcollapse.css" />
+  </head>
+  <body>
+    <h1>Collapsing Child Margins</h1>
+
+    <div class="red">
+      <div class="orange">
+        <div class="yellow">
+          <div class="green">
+            <div class="blue">
+              <div class="purple">Collapsed</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="padding red">
+      <div class="padding orange">
+        <div class="padding yellow">
+          <div class="padding green">
+            <div class="padding blue">
+              <div class="padding purple">Not Collapsed</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
